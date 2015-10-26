@@ -1,0 +1,19 @@
+{
+    "name": "sam-it/ls-interfaces",
+    "description": "Interfaces for Limesurvey entities: Survey, Group, Question, Answer",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sam",
+            "email": "sam@mousa.nl"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "SamIT\\LimeSurvey\\Interfaces\\" : [
+            "src/"
+            ]
+            }
+    }
+}
