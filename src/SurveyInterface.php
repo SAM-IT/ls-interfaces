@@ -25,11 +25,10 @@ interface SurveyInterface {
     /**
      * @return array Languages in which the survey is available
      */
-    public function getLanguages();
+    public function  getLanguages();
 
     /**
-     * @param string $language The language in which to return the survey.
-     * @return SurveyInterface A new instance of a Survey in the requested language.
+     * @return string The default language of the survey.
      */
-    public function getLanguage($language);
+    public function getDefaultLanguage();
 }
