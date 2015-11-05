@@ -7,5 +7,8 @@ interface AnswerInterface {
      */
     public function getText();
 
+    /**
+     * @return string Answer code
+     */
     public function getCode();
 }

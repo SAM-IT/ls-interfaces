@@ -1,18 +1,12 @@
 <?php
 namespace SamIT\LimeSurvey\Interfaces;
 
-interface QuestionInterface {
+interface QuestionInterface
+{
     /**
-     * @return int The unique ID for this survey.
+     * @return string The unique ID for this survey.
      */
     public function getId();
-
-    /**
-     * Returns all subquestions
-     * @return QuestionInterface[]
-     */
-    public function getQuestions();
-
 
     /**
      * @return string Question text
@@ -20,7 +14,23 @@ interface QuestionInterface {
     public function getText();
 
     /**
-     * @return AnswerInterface
+     * @return string Question title
+     */
+    public function getTitle();
+
+
+    /**
+     * @return int The number of axes for this question.
+     */
+    public function getDimensions();
+
+    /**
+     * Returns the answers for this question.
+     * Must return null in case this is an open question.
+     * Must return
+     * @
+     * @return AnswerInterface[]
      */
     public function getAnswers();
+
 }

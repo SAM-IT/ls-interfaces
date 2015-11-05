@@ -7,7 +7,7 @@ Abstracting from the Limesurvey questions, subquestions and answer scales is don
 
 --DRAFT
 
-* Each Question has a number of dimensions (current: {0, 1, 2}).
+* Each Question has a number of dimensions (currently limited to: {0, 1, 2}).
 * A single choice or text question has 0 dimensions, it has 1 data point.
 * A question with 1 dimension has n data points, where n is the number of (sub)questions in the first dimension.
 * A question with 2 dimensions has n * m data points, where n is the number of questions in the first dimension and m is the number of questions in the 2nd dimension.
@@ -77,6 +77,6 @@ When LimeSurvey internals change there is no need to adapt dependent code and th
 
 Some random notes that will be moved to appropriate interfaces:
 
-* QuestionInterface::getId() must be unique within a LimeSurvey installation, this must also hold for "dummy" objects like the Scale questions.
+* `QuestionInterface::getId()` must be unique within a LimeSurvey installation, this must also hold for "dummy" objects like the Scale questions.
 
 
