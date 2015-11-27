@@ -15,7 +15,7 @@ interface ResponseInterface {
 
 
     /**
-     * @return \DateTimeImmutable
+     * @return \DateTimeInterface
      */
     public function getSubmitDate();
 
