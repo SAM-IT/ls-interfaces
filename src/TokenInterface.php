@@ -67,8 +67,14 @@ interface TokenInterface {
      * @return \DateTimeInterface|null Returns the timestamp of reminder, or null if not completed.
      */
     public function getReminderSent();
+
     /**
      * @return string The default language of the survey.
      */
     public function getLanguage();
+
+    /**
+     * @return string[] An array of custom attribute name to value. Keys must be the name from LS not the "attribute_x" database fields.
+     */
+    public function getCustomAttributes();
 }
