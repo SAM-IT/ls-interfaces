@@ -22,4 +22,10 @@ interface GroupInterface {
      * @return string Title of the group
      */
     public function getTitle();
+
+
+    /**
+     * @return int The index of this group.
+     */
+    public function getIndex();
 }

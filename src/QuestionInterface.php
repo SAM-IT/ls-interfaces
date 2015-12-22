@@ -4,7 +4,7 @@ namespace SamIT\LimeSurvey\Interfaces;
 interface QuestionInterface
 {
     /**
-     * @return string The unique ID for this survey.
+     * @return string The unique ID for this question.
      */
     public function getId();
 
@@ -32,5 +32,10 @@ interface QuestionInterface
      * @return AnswerInterface[]
      */
     public function getAnswers();
+
+    /**
+     * @return int The index of this question.
+     */
+    public function getIndex();
 
 }
