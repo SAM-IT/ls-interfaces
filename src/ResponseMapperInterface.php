@@ -11,7 +11,7 @@ namespace SamIT\LimeSurvey\Interfaces;
  * Implementations will probably have a dependency on ResponseInterface
  */
 
-interface ResponseMapper
+interface ResponseMapperInterface
 {
 
     /**
