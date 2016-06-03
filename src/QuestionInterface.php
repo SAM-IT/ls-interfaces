@@ -38,4 +38,10 @@ interface QuestionInterface
      */
     public function getIndex();
 
+    /**
+     * Returns an array of subquestions for this question.
+     * @param int $dimension
+     * @return QuestionInterface[]
+     */
+    public function getQuestions($dimension);
 }
